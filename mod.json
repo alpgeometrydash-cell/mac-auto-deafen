@@ -1,0 +1,75 @@
+{
+	"geode": "5.10.1",
+	"gd": {
+		"mac": "2.2081"
+	},
+	"id": "alp.mac-auto-deafen",
+	"name": "Mac Auto Deafen",
+	"version": "v1.0.0",
+	"developer": "Alp",
+	"description": "Auto deafens Discord at a set % by pressing your Discord deafen keybind. Made for macOS.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"percent": {
+			"type": "int",
+			"name": "Deafen at %",
+			"description": "Discord gets deafened once you pass this percent.",
+			"default": 50,
+			"min": 1,
+			"max": 99,
+			"control": {
+				"arrows": true,
+				"slider": true,
+				"input": true
+			}
+		},
+		"undeafen-on-complete": {
+			"type": "bool",
+			"name": "Undeafen on complete",
+			"description": "Undeafen when you beat the level.",
+			"default": true
+		},
+		"practice-mode": {
+			"type": "bool",
+			"name": "Work in practice mode",
+			"default": false
+		},
+		"ignore-startpos": {
+			"type": "bool",
+			"name": "Ignore start pos runs",
+			"description": "Don't deafen if you started from a start position.",
+			"default": true
+		},
+		"key": {
+			"type": "string",
+			"name": "Key",
+			"description": "Must match the Toggle Deafen keybind you set in Discord.",
+			"default": "D",
+			"one-of": ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+		},
+		"ctrl": {
+			"type": "bool",
+			"name": "Hold Control",
+			"default": true
+		},
+		"option": {
+			"type": "bool",
+			"name": "Hold Option",
+			"default": true
+		},
+		"shift": {
+			"type": "bool",
+			"name": "Hold Shift",
+			"default": true
+		},
+		"command": {
+			"type": "bool",
+			"name": "Hold Command",
+			"default": false
+		}
+	}
+}
